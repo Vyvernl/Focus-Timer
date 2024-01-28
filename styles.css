@@ -1,0 +1,158 @@
+body{
+    background-color: #121212;
+    border-radius: 12;
+}
+
+.Title {
+    color: #fff;
+    transition: all 1s ease;
+    font-weight: bold;
+    font-family: consolas;
+    cursor: pointer;
+    height: 10px;
+    text-align: center;
+    font-size: 40px;
+    padding-left: 1rem;
+}
+
+.Title:hover {
+    color: #940aef;
+    font-weight: bolder;
+    text-shadow: 0px 0px 3px #940aef;
+}
+
+
+
+p{
+    color: rgb(225,225,255);
+    font-family: consolas;
+    padding-left: 1rem;
+    font-size: 20px;
+    text-align: center;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+p:hover{
+    color: rgb(73, 1, 160);
+    text-shadow: 0px 0px 10px rgb(101, 0, 225);
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 43%;
+    align-items: center;
+    align-self: center;
+}
+
+.toggle input {
+    margin-top: 10px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: 0,5s;
+}
+
+input:checked + .slider {
+    background-color: #21f360;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #21f360;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.extensionpart {
+    width: 375px;
+    border-style:solid;
+    border: border;
+    height: 270px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color : #fff;
+}
+
+.ElapsedTime {
+    font-family: consolas;
+    color: #fff;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.Clear-btn {
+    width: 75px;
+    height: 30px;
+    border: transparent;
+    border-radius: 14px;
+    box-shadow: 0px 0px 5px #fff;
+    color: black;
+    background-color: #fff;
+    transition: all 1s ease;
+    margin-left: 42%;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.Clear-btn:hover {
+    box-shadow: 0px 0px 5px #940aef;
+    background-color: #940aef;
+    color: white;
+    font-weight: bolder;
+    display: inline-block;
+}
+
+.Clear-btn:active {
+    background-color: #21f360;
+    box-shadow: 0px 0px 
+     #21f360;
+}
+
+.info {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    position: fixed;
+    margin-left: 100px;
+    margin-bottom: 2px; 
+    cursor: pointer;
+}

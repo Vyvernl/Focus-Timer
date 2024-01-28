@@ -1,0 +1,21 @@
+{
+    "name": "Focus Time",
+    "description": "The best way to track your study time.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "tabs",
+      "notifications",
+      "storage", 
+      "activeTab", 
+      "tabs"
+    ], 
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "Images/FocusLogo.png"
+    },
+
+    "content": {
+      "js": "script.js"
+    }
+}
